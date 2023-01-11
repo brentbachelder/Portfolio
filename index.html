@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Brent Bachelder - Projects</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Brent Bachelder</h1>
+        </header>
+
+        <div class="entry-header">
+            <span>Featured Projects</span>
+        </div>
+        <div class="entry-container">
+            <div class="entry">
+                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">The Real POS</div>
+                <a href="http://www.google.com" target="_blank">
+                    <img src="img/git.svg" class="icon">
+                    <img src="img/git_hover.svg" class="icon-hover">
+                </a>
+                <a href="http://www.google.com" target="_blank">
+                    <img src="img/web.svg" class="icon">
+                    <img src="img/web_hover.svg" class="icon-hover">
+                </a>
+            </div>
+            <div class="project-description" onclick="toggleEntry(this.parentNode)">
+                <div class="lang-frame">
+                    <span>Language: <b>JavaScript</b></span>
+                    <span>Framework(s): <b>(none)</b></span>
+                    <span>Backend: <b>Firebase</b></span>
+                    <p>Description: <b>Fully functioning point-of-sale for tech shops and auto shops.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="entry-container">
+            <div class="entry">
+                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">Gift List</div>
+                <a href="http://www.google.com" target="_blank">
+                    <img src="img/git.svg" class="icon">
+                    <img src="img/git_hover.svg" class="icon-hover">
+                </a>
+                <a href="http://www.google.com" target="_blank">
+                    <img src="img/web.svg" class="icon">
+                    <img src="img/web_hover.svg" class="icon-hover">
+                </a>
+            </div>
+            <div class="project-description" onclick="toggleEntry(this.parentNode)">
+                <div class="lang-frame">
+                    <span>Language: <b>JavaScript</b></span>
+                    <span>Framework(s): <b>NodeJS, Express</b></span>
+                    <span>Backend: <b>MySQL</b></span>
+                    <p>Description: <b>Make a list of gifts for the holidays and people can reserve them.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="entry-container">
+            <div class="entry">
+                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">A Simple Bookstore</div>
+                <a href="http://www.google.com" target="_blank">
+                    <img src="img/git.svg" class="icon">
+                    <img src="img/git_hover.svg" class="icon-hover">
+                </a>
+                <a href="http://www.google.com" target="_blank">
+                    <img src="img/web.svg" class="icon">
+                    <img src="img/web_hover.svg" class="icon-hover">
+                </a>
+            </div>
+            <div class="project-description" onclick="toggleEntry(this.parentNode)">
+                <div class="lang-frame">
+                    <span>Language: <b>JavaScript</b></span>
+                    <span>Framework(s): <b>React, NodeJS, Express</b></span>
+                    <span>Backend: <b>MySQL</b></span>
+                    <p>Description: <b>A sample bookstore that can be edited and updated using React</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="entry-header">
+            <span>Featured Projects</span>
+        </div>
+    </div>
+    <script>
+        function toggleEntry(parent) { 
+            let entries = document.getElementsByClassName('entry-container');
+            for(var i = 0; i < entries.length; i++) {
+                if(entries[i] == parent) parent.classList.toggle('showing');
+                else entries[i].classList.remove('showing');
+            }
+        }
+    </script>
+</body>
+</html>
