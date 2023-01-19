@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&display=swap');
 * { margin: 0; padding: 0; font-family: 'Inconsolata', monospace; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; }
-body { width: 100vw; display: flex; justify-content: center; background-color: #fefefe; }
-.container { width: 100%; max-width: 1024px; padding: 2vw 4vw; }
+body { width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; background-color: #d5d5d5; }
+.container { width: 100%; max-width: 1024px; height: fit-content; min-height: calc(100% - 60px); padding: 2vw 4vw; }
 header { width: 100%; text-align: right; }
-h1 { font-size: 24px; font-weight: 700; }
+    h1 { font-size: 24px; font-weight: 700; line-height: 32px; }
+    .header-links { width: 100%; display: flex; justify-content: flex-end; font-size: 14px; font-weight: 500; color: #888888; gap: 8px; }
+        .header-links span {  text-decoration: underline; }
+a { margin-left: 4vw; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; }
+    a .icon-hover { display: none; }
+footer { width: 100%; max-width: 1024px; height: 60px; display: flex; justify-content: center; align-items: center; gap: 32px; }
 
 .entry-header { width: 100%; height: 60px; display: flex; align-items: flex-end; font-size: 16px; color: #888888; border-bottom: 2px dotted #dddddd; padding: 8px 0; }
 .entry-container { border-bottom: 2px dotted #dddddd; padding: 4px 0; }
     .entry { width: 100%; display: flex; color: #121212; align-items: center; }
         .entry > .project-name { display: flex; flex-grow: 1; height: 40px; align-items: center; font-size: 18px; font-weight: 500; }
-        .entry > a { margin-left: 4vw; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; }
-            .entry > a .icon-hover { display: none; }
     .project-description { width: calc(100% - 120px - 12vw); height: 0; overflow: hidden; white-space: nowrap; transition-duration: .3s; }
-    .entry-container.showing .project-description { height: 48px; bottom: 4px 0 8px 0;  }
+    .entry-container.showing .project-description { height: 48px; padding: 4px 0 8px 0; }
+    .entry-container.showing .project-description.large { height: 64px; padding: 4px 0 8px 0; }
         .lang-frame { font-size: 12px; font-weight: 500; line-height: 16px; display: flex; column-gap: 32px; flex-wrap: wrap; overflow: visible; white-space: normal; }
             .lang-frame p { width: 100%;  }
     
@@ -20,12 +24,15 @@ h1 { font-size: 24px; font-weight: 700; }
 @media(max-width: 600px) {
     .project-description { width: 100%; }
     .entry-container.showing .project-description { height: 96px; }
+    .entry-container.showing .project-description.large { height: 112px; }
+    .entry-container.showing .project-description.large.not-mobile { height: 96px; }
     .lang-frame { justify-content: flex-start; }
     .lang-frame span { width: 100%; }
 }
 
 @media (hover:hover) {
+    a:hover .icon { display: none; } 
+    a:hover .icon-hover { display: block; }
     .entry-container:hover { background-color: #dddddd; }
-    .entry > a:hover .icon { display: none; } 
-    .entry > a:hover .icon-hover { display: block; }
+    .header-links span:hover { color: #444444; cursor: pointer; }
 }
