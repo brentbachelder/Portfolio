@@ -12,7 +12,10 @@
     <div class="container">
         <header>
             <h1>Brent Bachelder</h1>
-            <div class="header-links"><span>Download Resume</span> || <span>Send Email</span></div>
+            <div class="header-links">
+                <span onclick="window.open('resume/BrentBachelderResume.pdf', '_blank');">Download Resume</span> || 
+                <span onclick="window.location.href = 'mailto:brentbachelder@gmail.com'">Send Email</span>
+            </div>
         </header>
 
         <div class="entry-header">
@@ -20,12 +23,12 @@
         </div>
         <div class="entry-container">
             <div class="entry">
-                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">The Real POS</div>
-                <a href="http://www.google.com" target="_blank">
+                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">Tech Shop POS</div>
+                <a href="https://github.com/brentbachelder/TechShopPOS" target="_blank">
                     <img src="img/git.svg" class="icon">
                     <img src="img/git_hover.svg" class="icon-hover">
                 </a>
-                <a href="http://www.google.com" target="_blank">
+                <a href="https://brent-test-pos.web.app" target="_blank">
                     <img src="img/web.svg" class="icon">
                     <img src="img/web_hover.svg" class="icon-hover">
                 </a>
@@ -86,27 +89,6 @@
         </div>
         <div class="entry-container">
             <div class="entry">
-                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">Simple Bookstore</div>
-                <a href="http://www.google.com" target="_blank">
-                    <img src="img/git.svg" class="icon">
-                    <img src="img/git_hover.svg" class="icon-hover">
-                </a>
-                <a href="http://www.google.com" target="_blank">
-                    <img src="img/web.svg" class="icon">
-                    <img src="img/web_hover.svg" class="icon-hover">
-                </a>
-            </div>
-            <div class="project-description" onclick="toggleEntry(this.parentNode)">
-                <div class="lang-frame">
-                    <span>Language: <b>JavaScript</b></span>
-                    <span>Framework(s): <b>React, NodeJS, Express</b></span>
-                    <span>Backend: <b>MySQL</b></span>
-                    <p>Description: <b>Backend system for a bookstore, similar to early Amazon or a library.</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="entry-container">
-            <div class="entry">
                 <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">Countdown!</div>
                 <a href="https://github.com/brentbachelder/Countdown/tree/main" target="_blank">
                     <img src="img/git.svg" class="icon">
@@ -147,35 +129,57 @@
                 </div>
             </div>
         </div>
+        <div class="entry-container">
+            <div class="entry">
+                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">Simple Todo List</div>
+                <a href="https://github.com/brentbachelder/simple-todo-list" target="_blank">
+                    <img src="img/git.svg" class="icon">
+                    <img src="img/git_hover.svg" class="icon-hover">
+                </a>
+                <a href="https://simple-todo-list-53fcc.firebaseapp.com/" target="_blank">
+                    <img src="img/web.svg" class="icon">
+                    <img src="img/web_hover.svg" class="icon-hover">
+                </a>
+            </div>
+            <div class="project-description" onclick="toggleEntry(this.parentNode)">
+                <div class="lang-frame">
+                    <span>Language: <b>JavaScript</b></span>
+                    <span>Framework(s): <b>React</b></span>
+                    <span>Backend: <b>(none)</b></span>
+                    <p>Description: <b>Simple todo list that stores todos in local storage.</b></p>
+                </div>
+            </div>
+        </div>
         <div class="entry-header">
             <span>C#</span>
         </div>
         <div class="entry-container">
             <div class="entry">
-                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">Force 80 (demo)</div>
-                <a href="http://www.google.com" target="_blank">
+                <div class="project-name" onclick="toggleEntry(this.parentNode.parentNode)">School Database</div>
+                <a href="https://github.com/brentbachelder/school-database" target="_blank">
                     <img src="img/git.svg" class="icon">
                     <img src="img/git_hover.svg" class="icon-hover">
                 </a>
-                <a href="https://play.unity.com/" target="_blank">
-                    <img src="img/unity.svg" class="icon">
-                    <img src="img/unity_hover.svg" class="icon-hover">
-                </a>
+                <a></a>
             </div>
-            <div class="project-description large not-mobile" onclick="toggleEntry(this.parentNode)">
+            <div class="project-description" onclick="toggleEntry(this.parentNode)">
                 <div class="lang-frame">
                     <span>Language: <b>C#</b></span>
-                    <span>Framework(s): <b>Unity</b></span>
-                    <span>Backend: <b>(none)</b></span>
-                    <p>Description: <b>Demo level of mobile shooter platformer that uses only swipes for all actions.</b></p>
+                    <span>Framework(s): <b>ASP.net</b></span>
+                    <span>Backend: <b>SQLite</b></span>
+                    <p>Description: <b>A backend system for tests, teachers, and students.</b></p>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <a href="http://www.onceuponawishlist.com" target="_blank">
-            <img src="img/web.svg" class="icon">
-            <img src="img/web_hover.svg" class="icon-hover">
+        <a href="https://github.com/brentbachelder" target="_blank">
+            <img src="img/github.png" class="icon">
+            <img src="img/github_hover.png" class="icon-hover">
+        </a>
+        <a href="https://www.linkedin.com/in/brent-bachelder/" target="_blank">
+            <img src="img/linkedin.png" class="icon">
+            <img src="img/linkedin_hover.png" class="icon-hover">
         </a>
     </footer>
     
