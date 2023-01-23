@@ -1,5 +1,5 @@
 # Web Dev Portfolio
-### Website for showing off web development projects to employers and friends
+### Website for showing off web development projects to potential employers and friends
 Language: *JavaScript*<br />
 Framework: *(none)*<br />
 Database: *(none)*<br />
